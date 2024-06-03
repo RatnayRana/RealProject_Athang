@@ -1,7 +1,6 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:realprojectflutter/NavigationBar/BottomNavigationBar.dart';
 import 'package:realprojectflutter/domain/repo/AuthRepo.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -19,9 +18,10 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Future<void> loginUser() async {
     try {
-      AuthRepo().loginWithEmailAndPassword(_username.text, _password.text);
-      Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (_) => HomeScreen()));
+      final res =
+          AuthRepo().loginWithEmailAndPassword(_username.text, _password.text);
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (_) => Bottomnavigationbar()));
     } catch (e) {
       print(e);
     }

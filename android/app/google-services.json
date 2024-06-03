@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "525782770014",
+    "project_id": "messagingapp-cb885",
+    "storage_bucket": "messagingapp-cb885.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525782770014:android:cb24a6936cc9b32d81efcf",
+        "android_client_info": {
+          "package_name": "com.example.realprojectflutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXazS3OxlqiNZPT03l0CxzNEoyN67HQKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
